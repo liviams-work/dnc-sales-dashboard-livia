@@ -55,7 +55,7 @@ export const darkTheme: Theme = {
     alertColor: '#FFF',
     alertHover: '#D80000',
     disabled: '#313649',
-    disabledColor: '#6D7B',
+    disabledColor: '#666',
     primary: '#0C70F2',
     primaryColor: '#FFF',
     primaryHover: '#0061DE',

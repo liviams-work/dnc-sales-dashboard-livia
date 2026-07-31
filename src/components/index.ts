@@ -1,4 +1,5 @@
 export { default as AvatarsList } from './AvatarList'
+export { default as CustomTable } from './CustomTable'
 export { default as FormComponents } from './FormComponents'
 export { default as Header } from './Header'
 export * from './BannerImage'

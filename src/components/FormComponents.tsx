@@ -10,10 +10,10 @@ export const StyledForm = styled.form`
 `
 
 function FormComponents(props: FormComponentProps) {
-  const { inputs, buttons, message } = props
+  const { inputs, buttons, message, onSubmit } = props
 
   return (
-    <StyledForm>
+    <StyledForm onSubmit={onSubmit}>
       {inputs.map((inputProps, index) => (
         <StyledInput key={index} {...inputProps} />
       ))}

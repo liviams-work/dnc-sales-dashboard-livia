@@ -9,6 +9,11 @@ import {
 } from '@/components'
 import { pxToRem } from '@/utils'
 
+interface RegistrationFormValues {
+  email: string
+  password: string
+}
+
 function Registration() {
   return (
     <>
@@ -38,6 +43,10 @@ function Registration() {
                   { type: 'email', placeholder: 'Email' },
                   { type: 'password', placeholder: 'Senha' },
                 ]}
+                onSubmit={(values: RegistrationFormValues) => {
+                  // handle form submission
+                  console.log('Registration submit', values)
+                }}
                 buttons={[
                   { className: 'primary', type: 'submit', children: 'Login' },
                 ]}

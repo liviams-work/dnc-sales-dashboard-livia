@@ -10,4 +10,5 @@ export interface FormComponentProps {
   inputs: InputProps[]
   buttons: ButtonProps[]
   message?: MessageProps
+  onSubmit: SubmitEventHandler<HTMLFormElement>
 }
